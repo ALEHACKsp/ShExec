@@ -18,3 +18,17 @@ wscript ShExec.vbs cmd.exe /runas /max
 ## Screenshot / 截圖：
 
 [![](https://github.com/vungsung/ShExec/blob/master/shexec.png?raw=true)](https://github.com/vungsung/ShExec/blob/master/shexec.png?raw=true)
+
+## API Document / API 說明 (From [SS64.com](https://ss64.com/vb/shellexecute.html "SS64.com"))：
+```
+Syntax
+      .ShellExecute "application", "parameters", "dir", "verb", window
+
+      .ShellExecute 'some program.exe', '"some parameters with spaces"', , "runas", 1
+Key
+   application   The file to execute (required)
+   parameters    Arguments for the executable
+   dir           Working directory
+   verb          The operation to execute (runas/open/edit/print)
+   window        View mode application window (normal=1, hide=0, 2=Min, 3=max, 4=restore, 5=current, 7=min/inactive, 10=default)
+   ```
